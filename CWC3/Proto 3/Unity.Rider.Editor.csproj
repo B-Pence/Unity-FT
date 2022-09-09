@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>Packages</RootNamespace>
-    <ProjectGuid>{8D00B74C-1B62-2F21-DCEF-046B0F1185B1}</ProjectGuid>
+    <ProjectGuid>{2656DFB5-7A62-991C-60F0-8BE9764A7768}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.Rider.Editor</AssemblyName>
@@ -731,19 +731,19 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="UnityEditor.TestRunner.csproj">
-      <Project>{DA2A902E-324E-1E16-604D-F2465E6B7589}</Project>
+      <Project>{670E5A27-A4A4-B9BB-A3D4-4846A4816806}</Project>
       <Name>UnityEditor.TestRunner</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.TestRunner.csproj">
-      <Project>{53E85FC1-C4D9-FC17-1A6B-5A63803EB411}</Project>
+      <Project>{66D31E56-83E9-1636-1214-1331F12D116E}</Project>
       <Name>UnityEngine.TestRunner</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{CC947C75-CCEF-C700-E93E-7836DE120494}</Project>
+      <Project>{86197175-0F7C-C188-77F2-5ADF80FDE14C}</Project>
       <Name>UnityEditor.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{62860AF9-F5E5-A33F-2F6C-602C7A45B77D}</Project>
+      <Project>{084CACEB-D29E-6D2A-796A-6913983B21D9}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
   </ItemGroup>
