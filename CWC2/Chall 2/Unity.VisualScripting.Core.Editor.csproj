@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{15A29C8F-1E7B-67AA-2886-2D509259A7B9}</ProjectGuid>
+    <ProjectGuid>{A8C70792-87BA-A458-9286-2F8EC336D8D3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.VisualScripting.Core.Editor</AssemblyName>
@@ -1196,23 +1196,23 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.VisualScripting.Core.csproj">
-      <Project>{4A05FF4F-564D-D632-B5ED-FF8B2F5D55C9}</Project>
+      <Project>{E373B9DC-49D8-E9CB-CAD8-9FF046130A2A}</Project>
       <Name>Unity.VisualScripting.Core</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{E3945F19-A822-FD90-A2AD-4023D3CE5DE6}</Project>
+      <Project>{A46D1BDF-1A12-17FB-02C3-C1ED9666D280}</Project>
       <Name>UnityEditor.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{DB12A925-0218-FA52-2FDD-8DB2CF67A40F}</Project>
+      <Project>{15649134-6757-7983-0D6F-B1B78DBD736D}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.TestRunner.csproj">
-      <Project>{C1A49F8A-C96C-74AE-725D-CC440F983874}</Project>
+      <Project>{836F85E2-2D6C-4433-E40E-952FCE4DF583}</Project>
       <Name>UnityEngine.TestRunner</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.TestRunner.csproj">
-      <Project>{ACF3076A-9AC7-837F-D46D-C8EF52B0825F}</Project>
+      <Project>{A5750326-9B85-2E00-D97E-1A8052034E15}</Project>
       <Name>UnityEditor.TestRunner</Name>
     </ProjectReference>
   </ItemGroup>

@@ -577,7 +577,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88304a5fac9699245a82286999652e45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSpeed: 5
 --- !u!54 &1603111030
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -623,7 +622,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a019d585a69704948b69efb3c40960a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 0
 --- !u!4 &2025546039
 Transform:
   m_ObjectHideFlags: 0
