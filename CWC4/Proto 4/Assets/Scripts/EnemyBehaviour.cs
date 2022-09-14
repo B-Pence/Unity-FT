@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyBehaviour : MonoBehaviour
 {
-    public float EnemySpeed = 2;
+    public int EnemySpeed = 1;
     private Rigidbody enemyRb;
     private GameObject player;
 
@@ -18,6 +18,9 @@ public class EnemyBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        enemyRb.AddForce((player.transform.position - transform.position).normalized * EnemySpeed);
+
+        Vector3 playerPosDiff = (player.transform.position - transform.position).normalized;
+
+        enemyRb.AddForce(playerPosDiff * EnemySpeed);
     }
 }
