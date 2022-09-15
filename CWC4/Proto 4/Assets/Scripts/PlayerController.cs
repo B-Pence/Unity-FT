@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     public bool hasPowerup;
     private int powerupStrength = 15;
     public GameObject powerupIndicator;
+    public int powerUpsCollected;
 
     // Start is called before the first frame update
     void Start()
@@ -36,6 +37,7 @@ public class PlayerController : MonoBehaviour
             powerupIndicator.gameObject.SetActive(true);
             Destroy(other.gameObject);
             StartCoroutine(PowerupCountdownRoutine());
+            powerUpsCollected ++;
         }
     }
 
@@ -56,5 +58,12 @@ public class PlayerController : MonoBehaviour
             Debug.Log("Collided with " + collision.gameObject.name + "with powerup set to " + hasPowerup);
             enemyRb.AddForce(awayFromPlayer * powerupStrength, ForceMode.Impulse);
         }
+    }
+
+    private void GameOver()
+    {
+        Debug.Log("Game Over");
+        // add game over screen
+        // total highscore
     }
 }

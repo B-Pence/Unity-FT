@@ -7,6 +7,7 @@ public class EnemyBehaviour : MonoBehaviour
     public int EnemySpeed = 1;
     private Rigidbody enemyRb;
     private GameObject player;
+    public int EnemysDefeated;
 
     // Start is called before the first frame update
     void Start()
@@ -18,9 +19,10 @@ public class EnemyBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         Vector3 playerPosDiff = (player.transform.position - transform.position).normalized;
 
         enemyRb.AddForce(playerPosDiff * EnemySpeed);
+
+        if (transform.position.y < -10) { Destroy(gameObject); EnemysDefeated++; }
     }
 }
