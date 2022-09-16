@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     private int powerupStrength = 15;
     public GameObject powerupIndicator;
     public int powerUpsCollected;
+    public bool gameover = false;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +27,7 @@ public class PlayerController : MonoBehaviour
         float forwardInput = Input.GetAxis("Vertical");
         playerRb.AddForce(focalPoint.transform.forward * playerSpeed * forwardInput);
         powerupIndicator.transform.position = transform.position;
+        if (transform.position.y < -10) {GameOver();}
     }
 
     private void OnTriggerEnter(Collider other)
@@ -63,7 +65,9 @@ public class PlayerController : MonoBehaviour
     private void GameOver()
     {
         Debug.Log("Game Over");
+        gameover = true;
         // add game over screen
         // total highscore
+        //Destroy(gameObject);
     }
 }

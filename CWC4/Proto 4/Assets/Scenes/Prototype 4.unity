@@ -463,7 +463,7 @@ GameObject:
   - component: {fileID: 1279302623}
   - component: {fileID: 1279302622}
   m_Layer: 0
-  m_Name: Spanw Manager
+  m_Name: Spawn Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -481,9 +481,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6045739b84ad7b488984ae324ce69dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerControllerScript: {fileID: 1603111024}
   enemyPrefab: {fileID: 8553347718722833737, guid: 9e72f26fb2279f54796a7c53933c077b, type: 3}
   spawnRange: 9
   enemyCount: 0
+  currentWave: 1
+  gameoverIndicator: 0
+  gameover: 0
 --- !u!4 &1279302623
 Transform:
   m_ObjectHideFlags: 0
@@ -701,6 +705,7 @@ MonoBehaviour:
   hasPowerup: 0
   powerupIndicator: {fileID: 720902376}
   powerUpsCollected: 0
+  gameover: 0
 --- !u!54 &1603111030
 Rigidbody:
   m_ObjectHideFlags: 0

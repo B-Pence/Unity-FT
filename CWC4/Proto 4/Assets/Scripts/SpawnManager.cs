@@ -5,15 +5,25 @@ using UnityEngine;
 public class SpawnManager : MonoBehaviour
 {
 
+    PlayerController playerController;
+    public GameObject playerControllerScript;
+
     public GameObject enemyPrefab;
     public int spawnRange = 9;
     public int enemyCount;
+    public int currentWave = 1;
+    public bool gameoverIndicator;
+    public bool gameover = false;
+
+    private void Awake()
+    {
+        playerController = playerControllerScript.GetComponent<PlayerController>();
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-        SpawnEnemyWave(3);
-        Instantiate(enemyPrefab, GenerateSpawnPosition(), enemyPrefab.transform.rotation);
+        SpawnEnemyWave(currentWave);
     }
 
     // Update is called once per frame
@@ -21,7 +31,12 @@ public class SpawnManager : MonoBehaviour
     {
         enemyCount = FindObjectsOfType<EnemyBehaviour>().Length;
 
-        if(enemyCount == 0) { SpawnEnemyWave(1); }
+        if (playerController.gameover)
+        {
+            currentWave = 0;
+            gameoverIndicator = true;
+        }
+        else if (enemyCount == 0) { currentWave++; SpawnEnemyWave(currentWave); }
     }
 
     private Vector3 GenerateSpawnPosition()
