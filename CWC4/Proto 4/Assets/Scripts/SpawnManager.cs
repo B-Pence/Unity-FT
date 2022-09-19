@@ -14,16 +14,19 @@ public class SpawnManager : MonoBehaviour
     public int currentWave = 1;
     public bool gameoverIndicator;
     public bool gameover = false;
+    public GameObject powerupPrefab;
 
     private void Awake()
     {
         playerController = playerControllerScript.GetComponent<PlayerController>();
+        Instantiate(powerupPrefab, GenerateSpawnPosition(), powerupPrefab.transform.rotation);
     }
 
     // Start is called before the first frame update
     void Start()
     {
         SpawnEnemyWave(currentWave);
+
     }
 
     // Update is called once per frame
@@ -36,7 +39,7 @@ public class SpawnManager : MonoBehaviour
             currentWave = 0;
             gameoverIndicator = true;
         }
-        else if (enemyCount == 0) { currentWave++; SpawnEnemyWave(currentWave); }
+        else if (enemyCount == 0) { currentWave++; SpawnEnemyWave(currentWave); Instantiate(powerupPrefab, GenerateSpawnPosition(), powerupPrefab.transform.rotation); }
     }
 
     private Vector3 GenerateSpawnPosition()
