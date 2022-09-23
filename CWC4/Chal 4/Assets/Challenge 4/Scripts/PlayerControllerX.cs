@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerControllerX : MonoBehaviour
 {
     private Rigidbody playerRb;
-    private float speed = 500;
+    private int speed = 500;
     private GameObject focalPoint;
 
     public bool hasPowerup;
@@ -14,6 +14,9 @@ public class PlayerControllerX : MonoBehaviour
 
     private float normalStrength = 10; // how hard to hit enemy without powerup
     private float powerupStrength = 25; // how hard to hit enemy with powerup
+
+    public int boostMod;
+    public ParticleSystem boostParticle;
     
     void Start()
     {
@@ -23,12 +26,15 @@ public class PlayerControllerX : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKey(KeyCode.Space)) { boostMod = 150; boostParticle.Play(); }
+        else { boostMod = 1; boostParticle.Stop(); }
+
         // Add force to player in direction of the focal point (and camera)
         float verticalInput = Input.GetAxis("Vertical");
-        playerRb.AddForce(focalPoint.transform.forward * verticalInput * speed * Time.deltaTime); 
+        playerRb.AddForce(focalPoint.transform.forward * verticalInput * speed * boostMod * Time.deltaTime); 
 
         // Set powerup indicator position to beneath player
-        powerupIndicator.transform.position = transform.position + new Vector3(0, -0.0f, 0);
+        powerupIndicator.transform.position = transform.position + new Vector3(0, 0, 0);
     }
 
     // If Player collides with powerup, activate powerup
@@ -61,17 +67,12 @@ public class PlayerControllerX : MonoBehaviour
            
             if (hasPowerup) // if have powerup hit enemy with powerup force
             {
-                enemyRigidbody.AddForce(awayFromPlayer * powerupStrength/*, ForceMode.Impulse*/);
+                enemyRigidbody.AddForce(awayFromPlayer * powerupStrength);
             }
-            else // if no powerup, hit enemy with normal strength 
+            else // if no powerup, hit enemy with normal strength
             {
-                enemyRigidbody.AddForce(awayFromPlayer * normalStrength/*, ForceMode.Impulse*/);
+                enemyRigidbody.AddForce(awayFromPlayer * normalStrength);
             }
-
-
         }
     }
-
-
-
 }

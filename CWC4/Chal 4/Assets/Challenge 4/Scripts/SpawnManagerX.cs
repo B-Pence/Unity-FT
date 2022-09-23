@@ -29,7 +29,6 @@ public class SpawnManagerX : MonoBehaviour
         }
 
         enemySpeedMultiplier = 5 * waveCount;
-
     }
 
     // Generate random spawn position for powerups and enemy balls
@@ -59,7 +58,6 @@ public class SpawnManagerX : MonoBehaviour
 
         waveCount++;
         ResetPlayerPosition(); // put player back at start
-
     }
 
     // Move player back to position in front of own goal
@@ -70,10 +68,4 @@ public class SpawnManagerX : MonoBehaviour
         player.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
 
     }
-    /*
-    void increaseDifficultyLevel()
-    {
-        if()
-    }
-    */
 }
