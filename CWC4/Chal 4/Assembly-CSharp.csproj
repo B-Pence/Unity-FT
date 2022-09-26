@@ -801,6 +801,18 @@
       <Project>{B6DFF8D1-69DF-07FE-BBEB-3F1627A64D88}</Project>
       <Name>Unity.VisualScripting.State</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.Sysroot.Linux_x86_64.csproj">
+      <Project>{C7CAB7BD-6B9A-7FE1-85C2-7AD970D9FCBC}</Project>
+      <Name>Unity.Sysroot.Linux_x86_64</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Toolchain.Win-x86_64-Linux-x86_64.csproj">
+      <Project>{70DC279F-1448-8A9B-D5EE-65FE346B8ED6}</Project>
+      <Name>Unity.Toolchain.Win-x86_64-Linux-x86_64</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.SysrootPackage.Editor.csproj">
+      <Project>{E7E958D2-6319-98E7-9BA3-F1BA1D48A5EC}</Project>
+      <Name>Unity.SysrootPackage.Editor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

@@ -16,6 +16,7 @@ public class PlayerControllerX : MonoBehaviour
     private float powerupStrength = 25; // how hard to hit enemy with powerup
 
     public int boostMod;
+    public GameObject boostParticleBkup;
     public ParticleSystem boostParticle;
     
     void Start()
@@ -26,8 +27,11 @@ public class PlayerControllerX : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.Space)) { boostMod = 150; boostParticle.Play(); }
-        else { boostMod = 1; boostParticle.Stop(); }
+        if (Input.GetKey(KeyCode.Space)) { boostMod = 9; }
+        else { boostMod = 1; }
+
+        if (Input.GetKeyDown(KeyCode.Space)) { boostParticle.Play(); }
+        else if(Input.GetKeyUp(KeyCode.Space)) { boostParticle.Stop(); }
 
         // Add force to player in direction of the focal point (and camera)
         float verticalInput = Input.GetAxis("Vertical");
