@@ -653,13 +653,13 @@
       <Project>{41551C21-AC75-8430-6C05-91491149E941}</Project>
       <Name>UnityEngine.UI.Player</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.Services.Core.Player.csproj">
-      <Project>{F1112D02-1F0A-B736-37C2-E25622103615}</Project>
-      <Name>Unity.Services.Core.Player</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.Core.Player.csproj">
       <Project>{10E1E7D7-9C04-3610-7590-FD0A079E3A5F}</Project>
       <Name>Unity.VisualScripting.Core.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Services.Core.Player.csproj">
+      <Project>{F1112D02-1F0A-B736-37C2-E25622103615}</Project>
+      <Name>Unity.Services.Core.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Services.Core.Analytics.Player.csproj">
       <Project>{CA6B5F91-0981-FF81-06DB-C1B8D4450DAA}</Project>
