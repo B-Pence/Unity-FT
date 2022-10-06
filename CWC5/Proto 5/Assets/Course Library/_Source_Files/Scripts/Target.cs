@@ -5,11 +5,11 @@ using UnityEngine;
 
 public class Target : MonoBehaviour
 {
-    private float minspeed = 12;
-    private float maxspeed = 16;
-    private float maxTorque = 10;
-    private float xRange = 4;
-    private float ySpawnPos = -6;
+    private int minspeed = 12;
+    private int maxspeed = 16;
+    private int maxTorque = 10;
+    private int xRange = 4;
+    private float ySpawnPos = -3;
 
     private Rigidbody targetRb;
     // Start is called before the first frame update
@@ -30,4 +30,7 @@ public class Target : MonoBehaviour
     {
         
     }
+
+    private void OnMouseDown() { Destroy(gameObject); }
+    private void OnTriggerEnter(Collider other) { Destroy(gameObject); }
 }
