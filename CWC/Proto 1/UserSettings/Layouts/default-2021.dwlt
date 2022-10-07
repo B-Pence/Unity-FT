@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 1007
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Project
   m_RootView: {fileID: 4}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 79
+  controlID: 23
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -150,7 +150,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 78
+  controlID: 22
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -222,7 +222,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 49
+  controlID: 84
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -268,8 +268,8 @@ MonoBehaviour:
     y: 0
     width: 386
     height: 421
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -797,9 +797,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.000000059604645, y: 0.6717382, z: 50}
+    m_Target: {x: 14.311784, y: 2.0925188, z: -8.863639}
     speed: 2
-    m_Value: {x: -0.000000059604645, y: 0.6717382, z: 50}
+    m_Value: {x: 14.311784, y: 2.0925188, z: -8.863639}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -846,13 +846,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.18625087, y: 0.42686644, z: -0.09031423, w: 0.8803069}
+    m_Target: {x: 0.03605699, y: 0.912297, z: -0.08232922, w: 0.39954934}
     speed: 2
-    m_Value: {x: 0.18625087, y: 0.42686644, z: -0.09031423, w: 0.8803069}
+    m_Value: {x: 0.03605693, y: 0.9122954, z: -0.08232907, w: 0.39954862}
   m_Size:
-    m_Target: 2.082573
+    m_Target: 12.124355
     speed: 2
-    m_Value: 2.082573
+    m_Value: 12.124355
   m_Ortho:
     m_Target: 0
     speed: 2

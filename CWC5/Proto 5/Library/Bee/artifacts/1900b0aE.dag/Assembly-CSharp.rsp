@@ -357,6 +357,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Course Library/_Source_Files/Scripts/DestroyAfterDelay.cs"
+"Assets/Course Library/_Source_Files/Scripts/DifficultyButton.cs"
 "Assets/Course Library/_Source_Files/Scripts/GameManager.cs"
 "Assets/Course Library/_Source_Files/Scripts/Target.cs"
 -langversion:9.0
